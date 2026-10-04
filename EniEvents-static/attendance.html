@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>إدارة الحضور - نظام إدارة الفعاليات</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="assets/logo.png" alt="Logo">
+                <h1>نظام إدارة الفعاليات</h1>
+            </div>
+            <button id="menuToggle" class="menu-toggle" aria-label="قائمة" type="button">
+                <i class="fas fa-bars"></i>
+            </button>
+            <nav id="mainNav">
+                <ul>
+                    <li><a href="index.html"><i class="fas fa-info-circle"></i> نبذة عن المشروع</a></li>
+                    <li><a href="home.html"><i class="fas fa-home"></i> الرئيسية</a></li>
+                    <li><a href="events.html"><i class="fas fa-calendar-alt"></i> الفعاليات</a></li>
+                    <li><a href="create_event.html"><i class="fas fa-plus-circle"></i> إنشاء فعالية</a></li>
+                    <li><a href="dashboard.html"><i class="fas fa-tachometer-alt"></i> لوحة التحكم</a></li>
+                    <li><button id="themeToggle" class="theme-toggle" style="background: none; border: 2px solid var(--primary-color); color: var(--primary-color); padding: 8px 16px; border-radius: 20px; cursor: pointer; font-size: 16px; font-weight: bold; display: flex; align-items: center; gap: 8px; transition: all 0.3s;"><i class="fas fa-moon"></i> وضع داكن</button></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container">
+        <h2 style="margin-bottom: 20px;"><i class="fas fa-clipboard-check"></i> إدارة الحضور - ورشة عمل في البرمجة</h2>
+        
+        <div class="card">
+            <p><i class="fas fa-calendar"></i> <strong>التاريخ:</strong> 2026-02-23 10:00</p>
+            <p><i class="fas fa-map-marker-alt"></i> <strong>الموقع:</strong> قاعة المؤتمرات الرئيسية - مبنى العلوم</p>
+            <p><i class="fas fa-users"></i> <strong>عدد المسجلين:</strong> 2</p>
+            <p><i class="fas fa-check-circle"></i> <strong>عدد الحاضرين:</strong> 0</p>
+        </div>
+        
+        <div class="card">
+            <h3 class="card-title"><i class="fas fa-list"></i> قائمة الطلاب المسجلين</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>البريد الإلكتروني</th>
+                        <th>تاريخ التسجيل</th>
+                        <th>الحضور</th>
+                        <th>وقت الحضور</th>
+                        <th>الإجراءات</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><i class="fas fa-envelope"></i> student1@university.edu</td>
+                        <td><i class="fas fa-calendar"></i> ٢٠٢٦/٠٢/١٦ ١٢:٠٠</td>
+                        <td><i class="fas fa-times-circle" style="color: #EF4444;"></i> غائب</td>
+                        <td><i class="fas fa-clock"></i> -</td>
+                        <td>
+                            <button class="btn btn-primary" style="padding: 6px 12px; font-size: 12px;">
+                                <i class="fas fa-check"></i> تغيير للحاضر
+                            </button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><i class="fas fa-envelope"></i> student2@university.edu</td>
+                        <td><i class="fas fa-calendar"></i> ٢٠٢٦/٠٢/١٦ ١٣:٠٠</td>
+                        <td><i class="fas fa-times-circle" style="color: #EF4444;"></i> غائب</td>
+                        <td><i class="fas fa-clock"></i> -</td>
+                        <td>
+                            <button class="btn btn-primary" style="padding: 6px 12px; font-size: 12px;">
+                                <i class="fas fa-check"></i> تغيير للحاضر
+                            </button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        
+        <a href="event_details.html" class="btn btn-secondary"><i class="fas fa-arrow-right"></i> العودة لتفاصيل الفعالية</a>
+    </div>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 نظام إدارة الفعاليات الجامعية</p>
+        </div>
+    </footer>
+
+    <script src="js/theme.js"></script>
+    <script src="js/mobile-menu.js"></script>
+</body>
+</html>

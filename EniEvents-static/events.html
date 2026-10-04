@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>جميع الفعاليات - نظام إدارة الفعاليات</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="assets/logo.png" alt="Logo">
+                <h1>نظام إدارة الفعاليات</h1>
+            </div>
+            <button id="menuToggle" class="menu-toggle" aria-label="قائمة" type="button">
+                <i class="fas fa-bars"></i>
+            </button>
+            <nav id="mainNav">
+                <ul>
+                    <li><a href="index.html"><i class="fas fa-info-circle"></i> نبذة عن المشروع</a></li>
+                    <li><a href="events.html"><i class="fas fa-calendar-alt"></i> الفعاليات</a></li>
+                    <li><a href="login.html"><i class="fas fa-sign-in-alt"></i> تسجيل الدخول</a></li>
+                    <li><button id="themeToggle" class="theme-toggle" style="background: none; border: 2px solid var(--primary-color); color: var(--primary-color); padding: 8px 16px; border-radius: 20px; cursor: pointer; font-size: 16px; font-weight: bold; display: flex; align-items: center; gap: 8px; transition: all 0.3s;"><i class="fas fa-moon"></i> وضع داكن</button></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container">
+        <h2 style="margin-bottom: 20px;"><i class="fas fa-calendar-week"></i> جميع الفعاليات</h2>
+        
+        <div class="events-grid">
+            <div class="card">
+                <h3>ورشة عمل في البرمجة</h3>
+                <p><i class="fas fa-calendar"></i> ٢٣/٠٢/٢٠٢٦ ١٠:٠٠</p>
+                <p><i class="fas fa-map-marker-alt"></i> قاعة المؤتمرات الرئيسية - مبنى العلوم</p>
+                <div class="card-footer">
+                    <a href="event_details.html" class="btn btn-primary">عرض التفاصيل</a>
+                </div>
+            </div>
+            <div class="card">
+                <h3>محاضرة عن الذكاء الاصطناعي</h3>
+                <p><i class="fas fa-calendar"></i> ٢٦/٠٢/٢٠٢٦ ١٠:٠٠</p>
+                <p><i class="fas fa-map-marker-alt"></i> المدرج الكبير - كلية الهندسة</p>
+                <div class="card-footer">
+                    <a href="event_details_2.html" class="btn btn-primary">عرض التفاصيل</a>
+                </div>
+            </div>
+            <div class="card">
+                <h3>مؤتمر التكنولوجيا والابتكار</h3>
+                <p><i class="fas fa-calendar"></i> ٠٣/٠٣/٢٠٢٦ ٠٩:٠٠</p>
+                <p><i class="fas fa-map-marker-alt"></i> مركز المؤتمرات - الحرم الجامعي</p>
+                <div class="card-footer">
+                    <a href="event_details_3.html" class="btn btn-primary">عرض التفاصيل</a>
+                </div>
+            </div>
+            <div class="card">
+                <h3>ندوة عن ريادة الأعمال</h3>
+                <p><i class="fas fa-calendar"></i> ٢١/٠٢/٢٠٢٦ ١١:٠٠</p>
+                <p><i class="fas fa-map-marker-alt"></i> قاعة الندوات - مبنى الإدارة</p>
+                <div class="card-footer">
+                    <a href="event_details_4.html" class="btn btn-primary">عرض التفاصيل</a>
+                </div>
+            </div>
+            <div class="card">
+                <h3>ورشة تصميم الجرافيك</h3>
+                <p><i class="fas fa-calendar"></i> ٢٨/٠٢/٢٠٢٦ ١٤:٠٠</p>
+                <p><i class="fas fa-map-marker-alt"></i> معمل الحاسوب - كلية الفنون</p>
+                <div class="card-footer">
+                    <a href="event_details_5.html" class="btn btn-primary">عرض التفاصيل</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 نظام إدارة الفعاليات الجامعية</p>
+        </div>
+    </footer>
+
+    <script src="js/theme.js"></script>
+    <script src="js/mobile-menu.js"></script>
+</body>
+</html>

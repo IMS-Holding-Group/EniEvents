@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تفاصيل الفعالية - نظام إدارة الفعاليات</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="assets/logo.png" alt="Logo">
+                <h1>نظام إدارة الفعاليات</h1>
+            </div>
+            <button id="menuToggle" class="menu-toggle" aria-label="قائمة" type="button">
+                <i class="fas fa-bars"></i>
+            </button>
+            <nav id="mainNav">
+                <ul>
+                    <li><a href="index.html"><i class="fas fa-info-circle"></i> نبذة عن المشروع</a></li>
+                    <li><a href="events.html"><i class="fas fa-calendar-alt"></i> الفعاليات</a></li>
+                    <li><a href="login.html"><i class="fas fa-sign-in-alt"></i> تسجيل الدخول</a></li>
+                    <li><button id="themeToggle" class="theme-toggle" style="background: none; border: 2px solid var(--primary-color); color: var(--primary-color); padding: 8px 16px; border-radius: 20px; cursor: pointer; font-size: 16px; font-weight: bold; display: flex; align-items: center; gap: 8px; transition: all 0.3s;"><i class="fas fa-moon"></i> وضع داكن</button></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="card" style="max-width: 800px; margin: 0 auto;">
+            <h2 class="card-title">ندوة عن ريادة الأعمال</h2>
+            
+            <div class="card-text">
+                <p><strong>الوصف:</strong></p>
+                <p>ندوة حوارية مع رواد أعمال ناجحين لمناقشة التحديات والفرص في عالم ريادة الأعمال</p>
+            </div>
+            
+            <div class="card-text">
+                <p><i class="fas fa-calendar"></i> <strong>التاريخ والوقت:</strong> 2026-02-21 11:00</p>
+                <p><i class="fas fa-map-marker-alt"></i> <strong>الموقع:</strong> قاعة الندوات - مبنى الإدارة</p>
+                <p><i class="fas fa-tag"></i> <strong>النوع:</strong> ندوة</p>
+                <p><i class="fas fa-user-tie"></i> <strong>المنظم:</strong> organizer2@university.edu</p>
+                <p><i class="fas fa-chair"></i> <strong>المقاعد المتاحة:</strong> 80 / 80</p>
+                <p><i class="fas fa-users"></i> <strong>عدد المسجلين:</strong> 0</p>
+            </div>
+            
+            <div class="card-footer">
+                <p style="color: var(--primary-color); margin-bottom: 10px;"><i class="fas fa-info-circle"></i> تسجيل الدخول مطلوب للتسجيل في الفعالية</p>
+                <a href="login.html" class="btn btn-primary"><i class="fas fa-sign-in-alt"></i> تسجيل الدخول</a>
+                <a href="events.html" class="btn btn-secondary"><i class="fas fa-arrow-right"></i> العودة للقائمة</a>
+            </div>
+        </div>
+        
+        <div class="card reviews-section" style="max-width: 800px; margin: 20px auto;">
+            <h3 class="card-title"><i class="fas fa-star" style="color: #F59E0B;"></i> التقييمات والتعليقات</h3>
+            <div>
+                <p>لا توجد تقييمات بعد</p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 نظام إدارة الفعاليات الجامعية</p>
+        </div>
+    </footer>
+
+    <script src="js/theme.js"></script>
+    <script src="js/mobile-menu.js"></script>
+</body>
+</html>

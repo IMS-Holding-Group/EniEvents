@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>الصفحة الرئيسية - نظام إدارة الفعاليات</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="assets/logo.png" alt="Logo">
+                <h1>نظام إدارة الفعاليات</h1>
+            </div>
+            <button id="menuToggle" class="menu-toggle" aria-label="قائمة" type="button">
+                <i class="fas fa-bars"></i>
+            </button>
+            <nav id="mainNav">
+                <ul>
+                    <li><a href="index.html"><i class="fas fa-info-circle"></i> نبذة عن المشروع</a></li>
+                    <li><a href="home.html"><i class="fas fa-home"></i> الرئيسية</a></li>
+                    <li><a href="events.html"><i class="fas fa-calendar-alt"></i> الفعاليات</a></li>
+                    <li><a href="create_event.html"><i class="fas fa-plus-circle"></i> إنشاء فعالية</a></li>
+                    <li><button id="themeToggle" class="theme-toggle" style="background: none; border: 2px solid var(--primary-color); color: var(--primary-color); padding: 8px 16px; border-radius: 20px; cursor: pointer; font-size: 16px; font-weight: bold; display: flex; align-items: center; gap: 8px; transition: all 0.3s;"><i class="fas fa-moon"></i> وضع داكن</button></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container">
+        <h2 style="margin-bottom: 20px;"><i class="fas fa-user-circle"></i> مرحباً، user@example.com</h2>
+        
+        <h3 style="margin-bottom: 20px; color: var(--primary-color);"><i class="fas fa-calendar-check"></i> الفعاليات القادمة</h3>
+        <div class="events-grid">
+            <div class="card">
+                <h3 class="card-title"><i class="fas fa-calendar-check"></i> ورشة عمل في البرمجة</h3>
+                <p class="card-text"><i class="fas fa-calendar"></i> <strong>التاريخ:</strong> ٢٣/٠٢/٢٠٢٦ ١٠:٠٠</p>
+                <p class="card-text"><i class="fas fa-map-marker-alt"></i> <strong>الموقع:</strong> قاعة المؤتمرات الرئيسية - مبنى العلوم</p>
+                <p class="card-text"><i class="fas fa-chair"></i> <strong>المقاعد المتاحة:</strong> 50 / 50</p>
+                <div class="card-footer">
+                    <a href="event_details.html" class="btn btn-primary"><i class="fas fa-eye"></i> عرض التفاصيل</a>
+                </div>
+            </div>
+            <div class="card">
+                <h3 class="card-title"><i class="fas fa-calendar-check"></i> محاضرة عن الذكاء الاصطناعي</h3>
+                <p class="card-text"><i class="fas fa-calendar"></i> <strong>التاريخ:</strong> ٢٦/٠٢/٢٠٢٦ ١٠:٠٠</p>
+                <p class="card-text"><i class="fas fa-map-marker-alt"></i> <strong>الموقع:</strong> المدرج الكبير - كلية الهندسة</p>
+                <p class="card-text"><i class="fas fa-chair"></i> <strong>المقاعد المتاحة:</strong> 100 / 100</p>
+                <div class="card-footer">
+                    <a href="event_details_2.html" class="btn btn-primary"><i class="fas fa-eye"></i> عرض التفاصيل</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 نظام إدارة الفعاليات الجامعية</p>
+        </div>
+    </footer>
+
+    <script src="js/theme.js"></script>
+    <script src="js/mobile-menu.js"></script>
+</body>
+</html>
