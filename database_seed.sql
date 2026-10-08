@@ -4,12 +4,12 @@ USE eni_events;
 
 -- إضافة مستخدمين افتراضيين
 INSERT INTO Users (email, password, user_type) VALUES
-('admin@university.edu', '$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi', 'admin'),
-('organizer1@university.edu', '$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi', 'organizer'),
-('organizer2@university.edu', '$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi', 'organizer'),
-('student1@university.edu', '$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi', 'student'),
-('student2@university.edu', '$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi', 'student'),
-('student3@university.edu', '$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi', 'student');
+('admin@university.edu', '', 'admin'),
+('organizer1@university.edu', '', 'organizer'),
+('organizer2@university.edu', '', 'organizer'),
+('student1@university.edu', '', 'student'),
+('student2@university.edu', '', 'student'),
+('student3@university.edu', '', 'student');
 
 -- كلمة المرور الافتراضية لجميع المستخدمين: password
 
